@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from PIL import Image, ImageDraw
 
 load_dotenv()
-API_TOKEN = os.getenv("API_TOKEN")
+API_TOKEN = st.secrets["API_TOKEN"]
 API_URL = "https://api-inference.huggingface.co/models/google/gemma-7b-it"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
